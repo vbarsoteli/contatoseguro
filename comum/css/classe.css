@@ -1,0 +1,46 @@
+.botao_verde {
+	width:400px;
+	background-color:#309750;
+	color:#FFF;
+	padding:5px 30px;
+	font-size:14px;
+	margin:0 auto;
+}
+.botao_verde a {
+	color:#FFF;
+	display:block;
+}
+.botao_verde a:hover {
+	color:#FFF;
+	display:block;
+}
+.col_70 {
+	display:inline-block;
+	width:69%;
+	vertical-align: top;
+}
+.col_60 {
+	display:inline-block;
+	width:59%;
+	vertical-align: top;
+}
+.col_50 {
+	display:inline-block;
+	width:49%;
+	vertical-align: top;
+}
+.col_40 {
+	display:inline-block;
+	width:39%;
+	vertical-align: top;
+}
+.col_30 {
+	display:inline-block;
+	width:29%;
+	vertical-align: top;
+}
+.col_20 {
+	display:inline-block;
+	width:19%;
+	vertical-align: top;
+}
