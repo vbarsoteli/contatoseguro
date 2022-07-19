@@ -5,17 +5,17 @@
 		
 		//
 		$bd_servidor = 'localhost';
-		$bd_banco = 'institutoliderfarma';
+		$bd_banco = 'contatoseguro';
 		$bd_usuario = 'root';
 		$bd_senha = '123456';
 		
 	} else {
 
 		// AWS
-		$bd_servidor = '34.199.176.63';
-		$bd_banco = 'institutoliderfarma';
-		$bd_usuario = 'institutoliderfarma';
-		$bd_senha = '239v9v9129478';
+		$bd_servidor = '';
+		$bd_banco = 'contatoseguro';
+		$bd_usuario = 'contatoseguro';
+		$bd_senha = '';
 		
 	}
 	
