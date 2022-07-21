@@ -1,0 +1,36 @@
+@media (min-width: 999px) {
+    #erro {
+        display: none;
+        width: 500px;
+        text-align:center;
+        border:1px #CCC solid;
+        margin:0 auto;
+        padding:10px 0;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        background-color:red;
+    }
+}
+
+
+
+
+
+
+
+/* mobile */
+@media (max-width: 999px) {
+    #erro {
+        display: none;
+        width: 90%;
+        text-align:center;
+        border:1px #CCC solid;
+        margin:0 auto;
+        padding:10px 0;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        background-color:red;
+    }
+}

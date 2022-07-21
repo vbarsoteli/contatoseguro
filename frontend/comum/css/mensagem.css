@@ -1,0 +1,40 @@
+@media (min-width: 999px) {
+    #mensagem {
+        width: 300px;
+        text-align:right;
+        border:1px #CCC solid;
+        margin:0 auto;
+        padding:10px 10px 10px 0;
+        -webkit-border-bottom-right-radius: 5px;
+        -moz-border-radius-bottomright: 5px;
+        border-bottom-right-radius: 5px;
+        background-color:#CCC;
+        position: absolute;
+        top: 0;
+        left:0px;
+    }
+}
+
+
+
+
+
+
+
+/* mobile */
+@media (max-width: 999px) {
+    #mensagem {
+        width: 90%;
+        text-align:center;
+        border:1px #CCC solid;
+        margin:0 auto;
+        padding:10px 0;
+        -webkit-border-bottom-right-radius: 5px;
+        -moz-border-radius-bottomright: 5px;
+        border-bottom-right-radius: 5px;
+        background-color:#CCC;
+        position: absolute;
+        top: 0;
+        left:0px;
+    }
+}

@@ -1,0 +1,98 @@
+form {
+	margin: 0;
+	padding: 0;
+	color:#999;
+	vertical-align:top;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color:#999;
+	opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color:#999;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+	color:#999;
+}
+input[readonly] {
+	background-color: #ffffc2;
+}
+input[type=email] {
+	width:550px;
+	padding:15px;
+	border: none;
+	border: 1px #CCC solid;
+	margin: 0 0 3px 0;
+}
+input[type=text] {
+	width:550px;
+	padding:15px;
+	border: none;
+	border: 1px #CCC solid;
+	margin: 0 0 3px 0;
+}
+input[type=tel] {
+	width:550px;
+	padding:15px;
+	border: none;
+	border: 1px #CCC solid;
+	margin: 0 0 3px 0;
+}
+label {
+    display:inline-block;
+    *display: inline;     /* for IE7*/
+    zoom:1;              /* for IE7*/
+    text-align: left;
+    width: auto;
+	margin:0;
+	cursor:default;
+	color: #000;
+}
+label, input, button {
+    -moz-box-sizing: content-box; /* or `border-box` */
+    -webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	font-family:Arial;
+}
+input[name=nome], input[name=telefone], input[name=email] {
+	margin: 0 0 3px 0;
+}
+select {
+	padding:15px;
+	margin:0 0 10px;
+	font-size: 12px;	
+}
+textarea {
+	font-size: 12px;	
+	width:550px;
+	height:130px;
+	padding:15px;
+	border:none;
+	margin:0;
+	vertical-align:top;
+	font-family:Arial;
+}
+input[type=submit] {
+	width:150px;
+	padding:10px 0;
+	border:none;
+	cursor:pointer;
+	background-color: #1E9F75;
+	color: #FFF;
+}
+button {
+	min-width: 100px;
+	text-align: center;
+	background-color: #1E9F75;
+	padding: 10px 15px;
+	color: #FFF;
+	border:none;
+	margin: 10px;
+	cursor: pointer;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}

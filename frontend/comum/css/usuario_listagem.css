@@ -1,0 +1,35 @@
+@media (min-width: 999px) {
+    #usuario_listagem {
+        width: 90%;
+        min-height: 500px;
+        margin: 15px auto;
+        color: #000;
+        text-align: left;
+        font-size: 12px;
+    }
+    #usuario_listagem h1 {
+        color: #606062;
+        margin: 0 0 30px 0;
+    }  
+    #usuario_listagem i {
+        font-size: 18px;
+        text-align: left;
+    }  
+    #usuario_listagem a {
+        margin:10px;
+    }  
+    #usuario_listagem table {
+        margin:10px 0 0 0;
+    }  
+}
+
+
+
+
+
+
+
+/* mobile */
+@media (max-width: 999px) {
+
+}
