@@ -41,7 +41,9 @@
 					LEFT JOIN usuario_empresa_relacionamento UER ON UER.id_usuario = U.id_usuario
 					LEFT JOIN empresa E ON E.id_empresa = UER.id_empresa
 					WHERE 1
-					GROUP BY U.id_usuario";
+					GROUP BY U.id_usuario 
+					ORDER BY U.id_usuario DESC 
+					";
 			$req = $conexao->query($sql) or die($conexao->error.$sql);
 
 			//

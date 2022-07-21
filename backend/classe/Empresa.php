@@ -53,11 +53,8 @@
 
         public function Get() {
 
-            //
-            $id_usuario = $this->id;
-
             //       
-            $ch = curl_init('http://localhost/teste/contato_seguro_teste_senior/backend/api/empresa/'.$id_usuario);
+            $ch = curl_init('http://localhost/teste/contato_seguro_teste_senior/backend/api/empresa/'.$this->id);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
             curl_setopt($ch, CURLOPT_FRESH_CONNECT, true);

@@ -9,8 +9,8 @@
 		$classe->Delete();
 
 		//
-		//header('location: ?l=usuario_listagem');
-		//exit;
+		header('location: ?l=empresa_listagem');
+		exit;
 
     }
 
@@ -49,7 +49,7 @@
         echo '<td>'.$empresa_array[$i]['telefone'].'</td>';
         echo '<td>'.$empresa_array[$i]['cidade'].'</td>';
         echo '<td><a href="?l=empresa_cadastro&id='.$empresa_array[$i]['id_empresa'].'"><i class="fas fa-edit"></i></a></td>';
-        echo '<td><a href="?deletar&id='.$empresa_array[$i]['id_empresa'].'"><i class="fas fa-trash"></i></a></td>';
+        echo '<td><a href="?l=empresa_listagem&deletar&id='.$empresa_array[$i]['id_empresa'].'"><i class="fas fa-trash"></i></a></td>';
         echo '</tr>';
 
     }

@@ -49,7 +49,7 @@
         echo '<td>'.$usuario_array[$i]['telefone'].'</td>';
         echo '<td>'.$usuario_array[$i]['cidade'].'</td>';
         echo '<td><a href="?l=usuario_cadastro&id='.$usuario_array[$i]['id_usuario'].'"><i class="fas fa-edit"></i></a></td>';
-        echo '<td><a href="?deletar&id='.$usuario_array[$i]['id_usuario'].'"><i class="fas fa-trash"></i></a></td>';
+        echo '<td><a href="?l=usuario_listagem&deletar&id='.$usuario_array[$i]['id_usuario'].'"><i class="fas fa-trash"></i></a></td>';
         echo '</tr>';
 
     }
