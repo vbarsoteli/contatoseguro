@@ -1,0 +1,1 @@
+<div id="cabecalho"><a href="./"><img src="imagem/logo.png"></a></div>

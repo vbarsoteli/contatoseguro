@@ -1,5 +1,14 @@
 <?php
 
+	/*
+	*
+	* VINICIUS BARSOTELI
+	* vbarsoteli@gmali.com
+	*
+	* Julho/2022
+	*
+	*/
+
 	//
 	//try {
 
@@ -16,8 +25,10 @@
 		
 		//
 		include('../backend/conexao.php');
+		include('../backend/classe/Empresa.php');
 		include('../backend/classe/Usuario.php');
-		include('comum/minifier.php');
+		include('../backend/classe/UsuarioEmpresa.php');
+		include('comum/minifier.php'); // compacta os CSS e gera um único geral.min.css
 
 		//
 		$link = $_GET['l'] ? $_GET['l'] : 'usuario_listagem';
@@ -44,7 +55,7 @@
 <?php
 
 	//
-	include('header.php');
+	include('cabecalho.php');
 	include('menu.php');
 
 	//

@@ -1,4 +1,4 @@
-@media (min-width: 1366px) {
+@media (min-width: 999px) {
     #usuario_cadastro {
         width: 90%;
         min-height: 500px;
@@ -14,9 +14,18 @@
     #usuario_cadastro p {
         color: #606062;
         margin: 0 0 20px 0;
+    } 
+    #usuario_cadastro input[type=text] {
+        width: 100%;
+    }
+    #usuario_cadastro input[type=tel] {
+        width: 100%;
     }  
+    #usuario_cadastro input[type=email] {
+        width: 100%;
+    }        
     #usuario_cadastro .conteudo {
-        width: 600px;
+        width: 700px;
         margin: 0 auto;
     }
     #usuario_cadastro i {
@@ -33,24 +42,5 @@
 
 /* mobile */
 @media (max-width: 1366px) {
-    #usuario_cadastro {
-        width: 90%;
-        min-height: 500px;
-        margin: 15px auto;
-        color: #000;
-        text-align: center;
-        font-size: 12px;
-    }
-    #usuario_cadastro h1 {
-        color: #606062;
-        margin: 0 0 10px 0;
-    }  
-    #usuario_cadastro p {
-        color: #606062;
-        margin: 0 0 20px 0;
-    }  
-    #usuario_cadastro .conteudo {
-        width: 90%;
-        margin: 0 auto;
-    }
+
 }

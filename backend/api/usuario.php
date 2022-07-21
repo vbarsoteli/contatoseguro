@@ -21,13 +21,12 @@
 		if ($id) {
 
 			//
-			$sql = "SELECT U.*, E.nome AS empresa
+			$sql = "SELECT U.*, E.id_empresa, E.nome AS empresa
 					FROM usuario U
 					LEFT JOIN usuario_empresa_relacionamento UER ON UER.id_usuario = U.id_usuario
 					LEFT JOIN empresa E ON E.id_empresa = UER.id_empresa
 					WHERE 1
-					AND U.id_usuario = {$id} 
-					GROUP BY U.id_usuario";
+					AND U.id_usuario = {$id}  ";
 			$req = $conexao->query($sql) or die($conexao->error.$sql);
 			$usuario = $req->fetch_assoc();
 
@@ -61,11 +60,11 @@
 		if ($id) {
 
 			//
-			$sql = "DELETE usuario WHERE id_usuario = {$id}";
+			$sql = "DELETE FROM usuario WHERE id_usuario = {$id}";
 			$conexao->query($sql) or die($conexao->error.$sql);
 
 			//
-			$saida = '{ "mensagem": "Usuário deletado com sucesso!" }';
+			//$saida = '{ "mensagem": "Usuário deletado com sucesso!" }';
 
 		}
 
@@ -93,6 +92,9 @@
 			if (strtoupper($metodo) == 'POST') {
 
 				//
+				print_r($_POST['id_empresa']);
+
+				//
 				if ($dt_nascimento)
 					$sql = "INSERT INTO usuario SET dt_hr = NOW(), nome = '{$post['nome']}', email = '{$post['email']}', telefone = '{$post['telefone']}', dt_nascimento = '{$dt_nascimento}', cidade = '{$post['cidade']}' ";
 				else 
@@ -106,7 +108,7 @@
 
 
 			} elseif (strtoupper($metodo) == 'PUT') {
-
+	
 				//
 				if ($dt_nascimento)
 					$sql = "UPDATE usuario SET dt_hr = NOW(), nome = '{$post['nome']}', email = '{$post['email']}', telefone = '{$post['telefone']}', dt_nascimento = '{$dt_nascimento}', cidade = '{$post['cidade']}' 
@@ -117,6 +119,28 @@
 
 				//
 				$conexao->query($sql) or die($conexao->error.$sql);
+
+				//
+				for ($i=0; $i<sizeof($post['id_empresa']); $i++) {
+
+					//
+					$sql = "SELECT *
+							FROM usuario_empresa_relacionamento
+							WHERE 1
+							AND id_usuario = {$id}
+							AND id_empresa = {$post['id_empresa'][$i]}";
+					$req = $conexao->query($sql) or die($conexao->error.$sql);
+
+					//
+					if (!$req->num_rows){
+
+						//
+						$sql = "INSERT INTO usuario_empresa_relacionamento SET id_usuario = {$id}, id_empresa = {$post['id_empresa'][$i]}";
+						$conexao->query($sql) or die($conexao->error.$sql);
+
+					}
+
+				}
 
 				//
 				$saida = '{ "mensagem": "Usuário alterado com sucesso!" }';

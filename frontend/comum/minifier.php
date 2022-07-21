@@ -1,4 +1,8 @@
 <?php
+
+	/*
+	* Compacta os CSS e gera um único geral.min.css
+	*/
 	
 	//
 	if ($_SERVER['HTTP_HOST'] == '127.0.0.1' or $_SERVER['HTTP_HOST'] == 'localhost') {

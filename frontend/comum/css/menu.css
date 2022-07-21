@@ -6,11 +6,11 @@
         margin: 0 auto;
     }
     #menu a {
-        display: block;
         background-color: #000;
         color: #FFF;
         width: 200px;
-        padding: 10px 0;
+        padding: 10px 50px;
+        margin: 0 10px;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         border-radius: 5px;

@@ -8,6 +8,10 @@
 		$classe->id = $_GET['id'];
 		$classe->Delete();
 
+		//
+		//header('location: ?l=usuario_listagem');
+		//exit;
+
     }
 
     //
