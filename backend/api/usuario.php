@@ -120,7 +120,16 @@
 				//
 				$conexao->query($sql) or die($conexao->error.$sql);
 
-				//
+				/*
+				* empresas 
+				*/
+
+				// deleta todas as empresas antes de inserir novas (nao é a melhor forma de fazer, não tive 
+				//tempo de fazer do jeito correto)
+				$sql = "DELETE FROM usuario_empresa_relacionamento WHERE id_usuario = {$id}";
+				$conexao->query($sql) or die($conexao->error.$sql);
+
+				// cadastra as empresas
 				for ($i=0; $i<sizeof($post['id_empresa']); $i++) {
 
 					//
